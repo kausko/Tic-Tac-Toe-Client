@@ -33,6 +33,7 @@ export default function PVP() {
       socket.off("game:update");
       socket.disconnect();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
   const chooseToken = token => () => {
