@@ -20,9 +20,9 @@ function Game({ game, sessionID, updateBoard }) {
 				row.map((col, j) => (
 					<Col key={j} span={8}>
 						<Card
-							hoverable={game.status === "playing" && condition}
+							hoverable={game.status === "playing" && condition && col === " "}
 							onClick={
-								game.status === "playing" && condition
+								game.status === "playing" && condition && col === " "
 									? updateBoard(i, j)
 									: empty
 							}
